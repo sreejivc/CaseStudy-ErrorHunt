@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 //mongoose.connect('mongodb://localhost:27017/Library');
-mongoose.connect('mongodb+srv://sreeji:sreeji@cluster0.galbd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://sreeji:sreeji@cluster0.galbd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
+    useCreateIndex:true,
+    useNewUrlParser:true
+    
+});
 const Schema = mongoose.Schema;
 
 
